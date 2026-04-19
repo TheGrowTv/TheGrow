@@ -46,7 +46,7 @@
 <body>
     <div class="background">
         <h1>Benvenuti!</h1>
-        <button class="button" onclick="window.location.href='#'">Entra</button>
+        <button class="button" onclick="window.location.href='https://raw.githubusercontent.com/TheGrowTv/TheGrow/refs/heads/main/Menu'">Entra</button>
     </div>
 </body>
 </html>
