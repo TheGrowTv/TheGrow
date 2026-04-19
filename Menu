@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            background-color: #111;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        .grid-menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .menu-item {
+            background-color: #222;
+            border-radius: 12px;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .menu-item:hover {
+            background-color: #ff6600;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu Principale</h1>
+    <div class="grid-menu">
+        <div class="menu-item" onclick="alert('Vai ai Canali Sport')">Canali Sport</div>
+        <div class="menu-item" onclick="alert('Vai ai Canali Cinema')">Canali Cinema</div>
+        <div class="menu-item" onclick="alert('Vai a Intrattenimento')">Intrattenimento</div>
+    </div>
+</body>
+</html>
